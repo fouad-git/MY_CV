@@ -1,0 +1,33 @@
+body{
+    width:80%;
+    margin:5% auto;
+    font-family: cent;
+}
+.container{
+    header{
+        grid-area: header;
+        background-color: #8ca0ff;
+      }
+      aside{
+          grid-area: aside;
+          background-color: #ffa08c;
+      }
+      main{
+          grid-area: main;
+          background-color: #ffff64;
+      }
+      footer{
+          grid-area: footer;
+          background-color: #8cffa0;
+      }
+display: grid;
+grid-gap: 2%;
+grid-template-columns: 40% auto ;
+grid-template-areas: 
+"header header header" 
+    "aside main main" 
+    "aside main main"
+    "aside footer footer";
+
+  
+}
