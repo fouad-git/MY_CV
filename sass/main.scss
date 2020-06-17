@@ -1,11 +1,47 @@
 
 
 @import "import/layout";
+@import "import/mixins";
+@import "import/variables";
+@page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+        }
+   
+@media print {
+    body{
+        width: 21cm;
+        height: 29.7cm;
+        margin: 30mm 45mm 30mm 45mm; 
+        
+   } 
+}
+
 header{
-    
+   
+    .FL{
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 40px;
+        background: $bg-color;
+        @include flex;
+        p{
+            color:$txt-color ;
+        }
+        
+    }
     div{
+        h1{
+            text-align: center;
+        }
         p{  
-            
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
         }
     }
 }

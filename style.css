@@ -1,18 +1,21 @@
 body {
-  width: 80%;
+  height: 297mm;
+  width: 210mm;
+  max-width: 80%;
   margin: 5% auto;
-  font-family: cent;
+  font-family: Century Gothic, consolas, sans-serif;
 }
 
 .container {
   display: grid;
   grid-gap: 2%;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 30% auto;
+  grid-auto-rows: minmax(150px, auto);
   grid-template-areas: "header header header" "aside main main" "aside main main" "aside footer footer";
 }
 .container header {
   grid-area: header;
-  background-color: #8ca0ff;
+  background-color: white;
 }
 .container aside {
   grid-area: aside;
@@ -25,6 +28,42 @@ body {
 .container footer {
   grid-area: footer;
   background-color: #8cffa0;
+}
+
+@page {
+  size: 21cm 29.7cm;
+  margin: 30mm 45mm 30mm 45mm;
+}
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+  }
+}
+header .FL {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 40px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .FL p {
+  color: white;
+}
+header div h1 {
+  text-align: center;
+}
+header div p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,14 @@
 body{
-    width:80%;
+    height:297mm;
+    width:210mm;
+    max-width:80%;
     margin:5% auto;
-    font-family: cent;
+    font-family: Century Gothic,consolas, sans-serif;
 }
 .container{
     header{
         grid-area: header;
-        background-color: #8ca0ff;
+        background-color: white;
       }
       aside{
           grid-area: aside;
@@ -22,7 +24,8 @@ body{
       }
 display: grid;
 grid-gap: 2%;
-grid-template-columns: 40% auto ;
+grid-template-columns: 30% auto ;
+grid-auto-rows: minmax(150px, auto);
 grid-template-areas: 
 "header header header" 
     "aside main main" 
