@@ -1,3 +1,4 @@
+@import "variables.scss";
 body{
     height:297mm;
     width:210mm;
@@ -8,11 +9,14 @@ body{
 .container{
     header{
         grid-area: header;
-        background-color: white;
+        background: linear-gradient( #1f88f0,#208df1,#2395f3,#269df4,#39aff8);
       }
       aside{
           grid-area: aside;
-          background-color: #ffa08c;
+          font-size: 1rem;
+          background-color: lighten(#958f8fc7, 15);
+          padding: 18px;
+          border-radius: 5px;
       }
       main{
           grid-area: main;
